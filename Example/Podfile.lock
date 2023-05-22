@@ -1,0 +1,16 @@
+PODS:
+  - TAAuthenticationUI (0.1.0)
+
+DEPENDENCIES:
+  - TAAuthenticationUI (from `../`)
+
+EXTERNAL SOURCES:
+  TAAuthenticationUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TAAuthenticationUI: 558b4b6892bedb0a332e2c40084bd2101dccd8a1
+
+PODFILE CHECKSUM: 507597bd428e8c5a0e0cac6210dd7c50ebf07c91
+
+COCOAPODS: 1.12.1
