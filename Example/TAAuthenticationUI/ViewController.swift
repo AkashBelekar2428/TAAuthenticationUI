@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TAAuthenticationUI
 
 class ViewController: UIViewController {
 

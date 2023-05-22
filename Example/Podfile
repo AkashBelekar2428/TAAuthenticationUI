@@ -5,6 +5,7 @@ platform :ios, '10.0'
 target 'TAAuthenticationUI_Example' do
   pod 'TAAuthenticationUI', :path => '../'
   pod 'Alamofire', '~> 5.4'
+  
   target 'TAAuthenticationUI_Tests' do
     inherit! :search_paths
 
