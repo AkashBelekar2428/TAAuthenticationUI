@@ -7,38 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07DF640BE9236A8DA56D8903895F27FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		10A4993B53E3D890FCE96DA020DF783F /* TAAuthenticationUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A64F46669C41C0A11B3684FE1BC270 /* TAAuthenticationUI-dummy.m */; };
-		204C03BB8A912BE8AD61AB450C064130 /* Pods-TAAuthenticationUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FEE0A7ED5E99D6EF8954FEF9A85BE /* Pods-TAAuthenticationUI_Example-dummy.m */; };
-		4A6C068E34F41F158F4DDD24CCA823EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7544F692F6E01CD2B5EA12E57BCE4E4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7CCB8D0871B5A22549FA7B6A675B08B0 /* TAAuthenticationUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 675096C2B0EFEAD7013FD2380D2ECC8B /* TAAuthenticationUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE8D2D5F2A1B23DE00C073B1 /* AuthenticationLogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2D532A1B23DD00C073B1 /* AuthenticationLogIn.swift */; };
-		AE8D2D602A1B23DE00C073B1 /* RemoteLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2D542A1B23DD00C073B1 /* RemoteLayer.swift */; };
-		AE8D2D612A1B23DE00C073B1 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2D552A1B23DD00C073B1 /* Utility.swift */; };
-		AE8D2D622A1B23DE00C073B1 /* Email_Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2D562A1B23DD00C073B1 /* Email_Address.swift */; };
-		AE8D2D632A1B23DE00C073B1 /* ComponentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2D572A1B23DD00C073B1 /* ComponentManager.swift */; };
-		AE8D2D642A1B23DE00C073B1 /* AuthenticationLogIn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8D2D582A1B23DD00C073B1 /* AuthenticationLogIn.xib */; };
-		AE8D2D652A1B23DE00C073B1 /* Mobile_Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2D592A1B23DE00C073B1 /* Mobile_Number.swift */; };
-		AE8D2D662A1B23DE00C073B1 /* Mobile_Number.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8D2D5A2A1B23DE00C073B1 /* Mobile_Number.xib */; };
-		AE8D2D672A1B23DE00C073B1 /* PINView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2D5B2A1B23DE00C073B1 /* PINView.swift */; };
-		AE8D2D682A1B23DE00C073B1 /* PINView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8D2D5C2A1B23DE00C073B1 /* PINView.xib */; };
-		AE8D2D692A1B23DE00C073B1 /* Email_Address.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8D2D5D2A1B23DE00C073B1 /* Email_Address.xib */; };
-		AE8D2D6A2A1B23DE00C073B1 /* AuthenticationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2D5E2A1B23DE00C073B1 /* AuthenticationConfiguration.swift */; };
+		01750333B05970C5F728A38609C378FE /* PINView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3574A66B603EB22994C79FF75D9CC37 /* PINView.swift */; };
+		04A8430BFC619C34E5F4D3878D094380 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77226E8FC7B56CA1068824166848ADBF /* CachedResponseHandler.swift */; };
+		079F0820555C5B86C9FBD5EC6344137F /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D19AFBBBB00EEE64CE63E5D70649F6 /* Protected.swift */; };
+		0E4A2587362CDAE3DE72A50014F32602 /* Email_Address.xib in Sources */ = {isa = PBXBuildFile; fileRef = 009B91F33ABCD6FCB05252A3E4AE55FC /* Email_Address.xib */; };
+		11CCD832BD537718892C6A216A38490A /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C1B9BA6444238057611BDA7CACFA5 /* URLRequest+Alamofire.swift */; };
+		197457852FC83E905248660B0F930452 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B206CABA3E5C254320AB3AD7135A3CE /* AuthenticationInterceptor.swift */; };
+		1AFD57838680DF58184FF94D14C7F3FF /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F66307C1CA0F8DA20D1A6B668D1860 /* RequestInterceptor.swift */; };
+		282FCD4EA8B05830E9108690B8CD336B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BD68F2EB883212FFD2A289C9C6AFFD /* Session.swift */; };
+		320C0D7A88AA812EFB20016BA1F5D7AE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436FE54641F2D107C7A36EEE579A711 /* AFError.swift */; };
+		385BC4B250B6A6DB8AAAEA77D5B7A46F /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2AF8C623656CFD56B345D33E2C372 /* Combine.swift */; };
+		39D091B95CB8B55F6D1CEBE25E71A57E /* PINView.xib in Sources */ = {isa = PBXBuildFile; fileRef = B4A0E42098A7763121F7FDA0AAA690D1 /* PINView.xib */; };
+		3A59D8FBAF9A54906E3644AC80465AFB /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82D59AE35645D50D3A84BED8E57BBC /* Notifications.swift */; };
+		3E171253B53FDE3B7FCCBB08D6703F4C /* AuthenticationLogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289677DC42423B003DA77E4DE0055FB /* AuthenticationLogIn.swift */; };
+		3FA127A261BB563409868A0DC21807B2 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C5241B5E7FD5A8798EE42B92946C37 /* ResponseSerialization.swift */; };
+		482B74C0548970BB9C095E2D8530E421 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D8F2C20208E53D68F47064E2AADAC /* ParameterEncoding.swift */; };
+		4A6C068E34F41F158F4DDD24CCA823EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		529173B31EFCD3D199E79866AFBEC86C /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888DDD453AE7EBF323FD5C58AFC3C36A /* HTTPHeaders.swift */; };
+		5B92A66A66BD639411C3D839A0F87B0C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAE996B4E9D2DB7B306B601909915C7 /* Request.swift */; };
+		643A7AFFB7AEB70B2B9B7E0926055023 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FF77F272823F291CC1199FF15724F9 /* RetryPolicy.swift */; };
+		67B10FEAA3B7E5387D20E76B1085E94D /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748480AB66C4D2CE843052F31C9C0D4 /* URLSessionConfiguration+Alamofire.swift */; };
+		70D5CCD40D87D7997A70B534F49C1F5E /* AuthenticationLogIn.xib in Sources */ = {isa = PBXBuildFile; fileRef = BFF813729FA47308B8DA047E2F7B7AE7 /* AuthenticationLogIn.xib */; };
+		732C29255F73EF3D83D49BD4F8FEAA8F /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24767B05C71B09A12209F0C3C0CE3CB9 /* MultipartUpload.swift */; };
+		737747B9A98257DB58112C3A23686669 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592CA37CBFF826891439B792D0D405E6 /* MultipartFormData.swift */; };
+		77AB6AF4BFC6DE016DA7C057B5799C84 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EC1AD74376CBE8B70B0820F6A611BA /* ServerTrustEvaluation.swift */; };
+		78B1DD1219182494A6AFAD26AAB20AA6 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC7B7C6D7F8B176EF5F9FB19EC1561 /* Concurrency.swift */; };
+		7916DFD551EF2CC52263C6AB5AE991FB /* Pods-TAAuthenticationUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FEE0A7ED5E99D6EF8954FEF9A85BE /* Pods-TAAuthenticationUI_Example-dummy.m */; };
+		7A7D7175976079BD9181D2EE58E20180 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102948AA34748B497AC09ECBFA1EC1A1 /* Utility.swift */; };
+		7D64BC3E6CAA4AB54EAC0AAADE93F578 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910E01056C25BE91CB35F0ED509E6324 /* OperationQueue+Alamofire.swift */; };
+		7E7A29F67A4518941BCEEA50050FF7DD /* Email_Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEE3699582B7231054BA2CA342BBE1 /* Email_Address.swift */; };
+		81E6A0FF7F286008345ECFA3A2103FA8 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06058CC4DC17D97D816E6291418C188D /* Alamofire.swift */; };
+		82FD97FBBEFE51E2D3B434AF4954FC93 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366002D2484CDB3D84D2680DC45279B7 /* EventMonitor.swift */; };
+		87C7E66A9C615C690F66B873DA08D4FE /* Pods-TAAuthenticationUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DBDDB506A6B2378A292064D9FE7D62 /* Pods-TAAuthenticationUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D83AC05638BDB4A9DCF83CFAA98BAB6 /* Mobile_Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = D254E3660D56CC9B0897F8FADDD9CE6B /* Mobile_Number.swift */; };
+		8E698F134A953250D5834C8B83CDAD34 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000339D58404A7D349EB962C6BE9E8C9 /* DispatchQueue+Alamofire.swift */; };
+		8E85763AE29BEF0A46EE875B8F069E8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		9DE9613CF7679B02E61AE817DE18F7C3 /* TAAuthenticationUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6EBD85E8C05393815967D2311BF5B58 /* TAAuthenticationUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EF8DD841C09EA438A8F022C205F1EDC /* Mobile_Number.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8752C3F49385E1345958279471CC2D8C /* Mobile_Number.xib */; };
+		A523488C60BF961290D0B1ABB9ADACEC /* RequestCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDB01290164DBD601DFFB8BF2E99BB5 /* RequestCompression.swift */; };
+		AA721ECC2B36AFB7D9FE70C83E6D63F9 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F10AF7BA68CD513FE4BD12AC3E9325 /* Response.swift */; };
+		AE8D2DE42A1B6B2100C073B1 /* TALable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2DE32A1B6B2100C073B1 /* TALable.swift */; };
+		AE8D2DE62A1B6C2000C073B1 /* TAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2DE52A1B6C2000C073B1 /* TAButton.swift */; };
+		AE8D2DE82A1B6D7500C073B1 /* TATextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2DE72A1B6D7500C073B1 /* TATextFiled.swift */; };
+		AE8D2DEA2A1B6EC000C073B1 /* TAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2DE92A1B6EC000C073B1 /* TAImage.swift */; };
+		AE8D2DEC2A1B70D400C073B1 /* TAUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2DEB2A1B70D400C073B1 /* TAUIView.swift */; };
+		AE8D2DEE2A1C9EFC00C073B1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2DED2A1C9EFC00C073B1 /* Colors.swift */; };
+		AFD90D4EE25C74C87911BF86BB104DB7 /* TAAuthenticationUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7DCBFCCFE796A06255652A9413B110 /* TAAuthenticationUI-dummy.m */; };
+		B17D933C8F8BC6A4F91AA620D7D7A870 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1939EB3C8896EB69219C5F7BE0889 /* ParameterEncoder.swift */; };
+		BAB17A1C6CAD14B3788973EAF8466C93 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC207F43B02F0FCBF22B2B6ECAB6315 /* NetworkReachabilityManager.swift */; };
 		BCDA23BC0BD4D8CD5444E974319B3466 /* Pods-TAAuthenticationUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BCFA341B60B98332053F8614406C4F5 /* Pods-TAAuthenticationUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9A01771DAECF8B0C35DF7D38D8E3B20 /* Pods-TAAuthenticationUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DBDDB506A6B2378A292064D9FE7D62 /* Pods-TAAuthenticationUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C04739CBCEE445B66192BFA708655EDF /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0CEF5C05F64E7426A7256B88CE035 /* StringEncoding+Alamofire.swift */; };
+		C56BFD765EAA507ADE8A3C0C67642526 /* AuthenticationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02199604992B330DD7D84EA66A4FEDD4 /* AuthenticationConfiguration.swift */; };
+		C8269B42DED12AB1F275648D0BD32E45 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4726E64C69480A59B59C7FAEADD2FEB4 /* URLEncodedFormEncoder.swift */; };
+		CBC2E6F35FE8A2AD76993051ADA65D64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		D0560E8E2E5EB407B5D8E0381BF453FA /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5152926B0E533873A8EED86D330834C0 /* URLConvertible+URLRequestConvertible.swift */; };
+		D09FBBADAF7C5C757AA5AB5DFE54BD25 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA17C4197838FFA052EE7B9CAD9DD8D3 /* Alamofire-dummy.m */; };
+		D368E6F70C5E6998548A72E65F92432D /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA3C62864BF74A58495C935CB6F35D /* Validation.swift */; };
+		D7BCBE1EB4A638403C265CE2199EFF1B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */; };
+		E6251F02EE12804D1B66AE32E716E664 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6965E5E3838DCDCC41AC01DA56A7D8D /* SessionDelegate.swift */; };
 		E806785F7CC09C001F33A3A2BAE8309C /* Pods-TAAuthenticationUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B8ADBE6D08DFAB09C208E046711212 /* Pods-TAAuthenticationUI_Tests-dummy.m */; };
+		ECE6F23823454A8FDB3F97CE1A7CD182 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B27F0DC0BF19F460FD9E129E69629E /* RedirectHandler.swift */; };
+		ECF2F956B37A4C28B228BC291A57AD6E /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E276D9A7B3CF40C485A7FB983B8E7 /* RequestTaskMap.swift */; };
+		F038D81F7ABAA15CF03246AD4BF334F7 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F833B93B04081CCB1F8033F4D88CDF4 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2415AE8678DE2698B7AD7D88B1A5C0F /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B614FCEF1E81C3ADCF667EBD4DD00A /* AlamofireExtended.swift */; };
+		F66CC47AD425C8D57BD149AFD09C2AFE /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18C61B77E806893D01FB3110BCFF9F3 /* HTTPMethod.swift */; };
+		F6E94E8EE1CE35F49B9091BE8748587B /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA707F68E714E23150CF6B884D329CA /* Result+Alamofire.swift */; };
+		F817E428C9C06E62DCC6A586E194C2F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2004CDD4FF472B89D8C0737A97022043 /* PBXContainerItemProxy */ = {
+		5469C0FA982147367415301403B8A5BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		66BF97E71EFE4AF666E39526D839D2EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 20B3D5BEA7DEDC9F852B908CDBB8910A;
 			remoteInfo = "Pods-TAAuthenticationUI_Example";
 		};
-		2B112DFEECDF8626DE2F30CF0A34BEF5 /* PBXContainerItemProxy */ = {
+		759165DBD650C5DAD8AB67811739F428 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		A47914632FCB2D98FAF34D5FE350126D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -48,53 +107,112 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000339D58404A7D349EB962C6BE9E8C9 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		009B91F33ABCD6FCB05252A3E4AE55FC /* Email_Address.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = Email_Address.xib; sourceTree = "<group>"; };
+		02199604992B330DD7D84EA66A4FEDD4 /* AuthenticationConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthenticationConfiguration.swift; sourceTree = "<group>"; };
 		04B3E8D5B211AEE4A238C825C6363489 /* Pods-TAAuthenticationUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAAuthenticationUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		0D28A5995EF969AB5EFBC6636070DF03 /* TAAuthenticationUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TAAuthenticationUI-Info.plist"; sourceTree = "<group>"; };
+		05BEE3699582B7231054BA2CA342BBE1 /* Email_Address.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Email_Address.swift; sourceTree = "<group>"; };
+		06058CC4DC17D97D816E6291418C188D /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		0E3FEE0A7ED5E99D6EF8954FEF9A85BE /* Pods-TAAuthenticationUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TAAuthenticationUI_Example-dummy.m"; sourceTree = "<group>"; };
+		102948AA34748B497AC09ECBFA1EC1A1 /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		15994483E90F3C20272415C132441215 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		22C5241B5E7FD5A8798EE42B92946C37 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		24767B05C71B09A12209F0C3C0CE3CB9 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		2AF25DE07795071176D45A8F9030826A /* TAAuthenticationUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TAAuthenticationUI-prefix.pch"; sourceTree = "<group>"; };
+		306E2D1B9E4FC953243A0CACF97218A6 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		31FF77F272823F291CC1199FF15724F9 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
+		366002D2484CDB3D84D2680DC45279B7 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
 		374F648CA6C3F7463705566DD8A19729 /* Pods-TAAuthenticationUI_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAAuthenticationUI_Tests-Info.plist"; sourceTree = "<group>"; };
-		37A64F46669C41C0A11B3684FE1BC270 /* TAAuthenticationUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TAAuthenticationUI-dummy.m"; sourceTree = "<group>"; };
+		38F66307C1CA0F8DA20D1A6B668D1860 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
 		3E70764E6F566D98D5635C24121DD57F /* Pods-TAAuthenticationUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TAAuthenticationUI_Example-frameworks.sh"; sourceTree = "<group>"; };
+		40CA3C62864BF74A58495C935CB6F35D /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		4187909229BE5D1C5969191D2A7341CD /* Pods-TAAuthenticationUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TAAuthenticationUI_Tests.modulemap"; sourceTree = "<group>"; };
+		4726E64C69480A59B59C7FAEADD2FEB4 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		486CDDDA6F12360D1AA6EF9404F5BD14 /* Pods-TAAuthenticationUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAAuthenticationUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4A50B98A423FF01C14BF4DBDB4D4A190 /* TAAuthenticationUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TAAuthenticationUI.modulemap; sourceTree = "<group>"; };
+		4F833B93B04081CCB1F8033F4D88CDF4 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		5152926B0E533873A8EED86D330834C0 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		525528C0FFF693B250807416C8F01E2D /* Pods-TAAuthenticationUI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAAuthenticationUI_Example-Info.plist"; sourceTree = "<group>"; };
 		526E35DA2F289BE8E2935F3F45DA0EA2 /* Pods_TAAuthenticationUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAAuthenticationUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56848C5C7FB091406B5B5018590ACD0D /* Pods_TAAuthenticationUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAAuthenticationUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56DA74FF78F95A53265F6E1FA0671BE8 /* TAAuthenticationUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TAAuthenticationUI.release.xcconfig; sourceTree = "<group>"; };
+		592CA37CBFF826891439B792D0D405E6 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		5BCFA341B60B98332053F8614406C4F5 /* Pods-TAAuthenticationUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TAAuthenticationUI_Tests-umbrella.h"; sourceTree = "<group>"; };
-		667E968587D1B870066F3567ADCF9418 /* TAAuthenticationUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TAAuthenticationUI.modulemap; sourceTree = "<group>"; };
-		675096C2B0EFEAD7013FD2380D2ECC8B /* TAAuthenticationUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TAAuthenticationUI-umbrella.h"; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E334FE552E54E391F824A6E282B3A2B /* TAAuthenticationUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TAAuthenticationUI.debug.xcconfig; sourceTree = "<group>"; };
+		60D19AFBBBB00EEE64CE63E5D70649F6 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		67B27F0DC0BF19F460FD9E129E69629E /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		68DD463D99608F86D4FE656EF84F1FE4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		69B99C27300EC443C99F14F6C34D4F90 /* Pods-TAAuthenticationUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAAuthenticationUI_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6DE7FD64DDD2B11527460954DB198C93 /* TAAuthenticationUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TAAuthenticationUI-prefix.pch"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6ED8831F6FF4301FD74775E203143BC4 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		740AAA5D9614C4C73D0E5D0E6E1FA9F3 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		77226E8FC7B56CA1068824166848ADBF /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		79D0CEF5C05F64E7426A7256B88CE035 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		7B82D59AE35645D50D3A84BED8E57BBC /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		8752C3F49385E1345958279471CC2D8C /* Mobile_Number.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = Mobile_Number.xib; sourceTree = "<group>"; };
+		888DDD453AE7EBF323FD5C58AFC3C36A /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		88B1939EB3C8896EB69219C5F7BE0889 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		8A49966547144941DFDC325DF157656C /* TAAuthenticationUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TAAuthenticationUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8D24F91B1224831B764C189BF1C02CB1 /* TAAuthenticationUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TAAuthenticationUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		8E82DB028C41EC6ECDFAFDA29E9F7C86 /* Pods-TAAuthenticationUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TAAuthenticationUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9AE513B5D2B808A4A1B081BB4BC8E8E1 /* TAAuthenticationUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TAAuthenticationUI.debug.xcconfig; sourceTree = "<group>"; };
+		8FDB01290164DBD601DFFB8BF2E99BB5 /* RequestCompression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCompression.swift; path = Source/RequestCompression.swift; sourceTree = "<group>"; };
+		910E01056C25BE91CB35F0ED509E6324 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		920D8F2C20208E53D68F47064E2AADAC /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		94F10AF7BA68CD513FE4BD12AC3E9325 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		953E276D9A7B3CF40C485A7FB983B8E7 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		9626EC6C07C0150B7C1CD4708842B680 /* TAAuthenticationUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TAAuthenticationUI-Info.plist"; sourceTree = "<group>"; };
+		9B206CABA3E5C254320AB3AD7135A3CE /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1DBDDB506A6B2378A292064D9FE7D62 /* Pods-TAAuthenticationUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TAAuthenticationUI_Example-umbrella.h"; sourceTree = "<group>"; };
-		AE4A0D5DFDAFBD5D80E4716760D1270C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		AE8D2D532A1B23DD00C073B1 /* AuthenticationLogIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationLogIn.swift; sourceTree = "<group>"; };
-		AE8D2D542A1B23DD00C073B1 /* RemoteLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteLayer.swift; sourceTree = "<group>"; };
-		AE8D2D552A1B23DD00C073B1 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		AE8D2D562A1B23DD00C073B1 /* Email_Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Email_Address.swift; sourceTree = "<group>"; };
-		AE8D2D572A1B23DD00C073B1 /* ComponentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentManager.swift; sourceTree = "<group>"; };
-		AE8D2D582A1B23DD00C073B1 /* AuthenticationLogIn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationLogIn.xib; sourceTree = "<group>"; };
-		AE8D2D592A1B23DE00C073B1 /* Mobile_Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mobile_Number.swift; sourceTree = "<group>"; };
-		AE8D2D5A2A1B23DE00C073B1 /* Mobile_Number.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Mobile_Number.xib; sourceTree = "<group>"; };
-		AE8D2D5B2A1B23DE00C073B1 /* PINView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINView.swift; sourceTree = "<group>"; };
-		AE8D2D5C2A1B23DE00C073B1 /* PINView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PINView.xib; sourceTree = "<group>"; };
-		AE8D2D5D2A1B23DE00C073B1 /* Email_Address.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Email_Address.xib; sourceTree = "<group>"; };
-		AE8D2D5E2A1B23DE00C073B1 /* AuthenticationConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationConfiguration.swift; sourceTree = "<group>"; };
-		B234890274085C0DD46EBB7C5FBF76B6 /* TAAuthenticationUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TAAuthenticationUI.release.xcconfig; sourceTree = "<group>"; };
+		A436FE54641F2D107C7A36EEE579A711 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		A52D1AFEE03B6011772E5FAE0AC50EEE /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		AD714F718D7CC54F064F15757F78C492 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		AE8D2DE32A1B6B2100C073B1 /* TALable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TALable.swift; sourceTree = "<group>"; };
+		AE8D2DE52A1B6C2000C073B1 /* TAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAButton.swift; sourceTree = "<group>"; };
+		AE8D2DE72A1B6D7500C073B1 /* TATextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TATextFiled.swift; sourceTree = "<group>"; };
+		AE8D2DE92A1B6EC000C073B1 /* TAImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAImage.swift; sourceTree = "<group>"; };
+		AE8D2DEB2A1B70D400C073B1 /* TAUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUIView.swift; sourceTree = "<group>"; };
+		AE8D2DED2A1C9EFC00C073B1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B1B614FCEF1E81C3ADCF667EBD4DD00A /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		B2D2AF8C623656CFD56B345D33E2C372 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		B4A0E42098A7763121F7FDA0AAA690D1 /* PINView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PINView.xib; sourceTree = "<group>"; };
 		BB36456863CFC9A1EA62E1D56948785E /* Pods-TAAuthenticationUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TAAuthenticationUI_Example.modulemap"; sourceTree = "<group>"; };
-		C80FA0E2E942C36B4A5BAC2C3DA10AAA /* TAAuthenticationUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TAAuthenticationUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D0E7A63E5DF2BF32DD600D40D2D6343E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BDAE996B4E9D2DB7B306B601909915C7 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		BFF813729FA47308B8DA047E2F7B7AE7 /* AuthenticationLogIn.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = AuthenticationLogIn.xib; sourceTree = "<group>"; };
+		C18C61B77E806893D01FB3110BCFF9F3 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		C289677DC42423B003DA77E4DE0055FB /* AuthenticationLogIn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthenticationLogIn.swift; sourceTree = "<group>"; };
+		C2BD68F2EB883212FFD2A289C9C6AFFD /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		C6965E5E3838DCDCC41AC01DA56A7D8D /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		C6EBD85E8C05393815967D2311BF5B58 /* TAAuthenticationUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TAAuthenticationUI-umbrella.h"; sourceTree = "<group>"; };
+		C748480AB66C4D2CE843052F31C9C0D4 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		CD7DCBFCCFE796A06255652A9413B110 /* TAAuthenticationUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TAAuthenticationUI-dummy.m"; sourceTree = "<group>"; };
+		D254E3660D56CC9B0897F8FADDD9CE6B /* Mobile_Number.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Mobile_Number.swift; sourceTree = "<group>"; };
 		D3B56AA6024C0B30DC22333E9AD425CC /* Pods-TAAuthenticationUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAAuthenticationUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D3EF6CD6B8FE673DDB9DE1812C6F3643 /* Pods-TAAuthenticationUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TAAuthenticationUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC78BA2ACF951FE1F7E151016DD75B2A /* Pods-TAAuthenticationUI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TAAuthenticationUI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DCAC7B7C6D7F8B176EF5F9FB19EC1561 /* Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concurrency.swift; path = Source/Concurrency.swift; sourceTree = "<group>"; };
+		DDA707F68E714E23150CF6B884D329CA /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		DEA9DDBCC826FD49D64AE3271B47D012 /* Pods-TAAuthenticationUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TAAuthenticationUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E3574A66B603EB22994C79FF75D9CC37 /* PINView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PINView.swift; sourceTree = "<group>"; };
 		E8B8ADBE6D08DFAB09C208E046711212 /* Pods-TAAuthenticationUI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TAAuthenticationUI_Tests-dummy.m"; sourceTree = "<group>"; };
+		E8EC1AD74376CBE8B70B0820F6A611BA /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		EA0C1B9BA6444238057611BDA7CACFA5 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		EA17C4197838FFA052EE7B9CAD9DD8D3 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FEC207F43B02F0FCBF22B2B6ECAB6315 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5BF6E64D3157435E5797A5278584A4DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7BCBE1EB4A638403C265CE2199EFF1B /* CFNetwork.framework in Frameworks */,
+				8E85763AE29BEF0A46EE875B8F069E8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		60D5D8E48FE9EA8C5B6CA5697E25E7D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,59 +221,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9204422929B758DF08C865BE128E888 /* Frameworks */ = {
+		8F839DC481A6340544A3AD856B933F83 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7544F692F6E01CD2B5EA12E57BCE4E4B /* Foundation.framework in Frameworks */,
+				F817E428C9C06E62DCC6A586E194C2F2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5678DE10FCBDE30F5A0F75878F8CE21 /* Frameworks */ = {
+		C1235159CCDE84659DB170215641A3A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07DF640BE9236A8DA56D8903895F27FE /* Foundation.framework in Frameworks */,
+				CBC2E6F35FE8A2AD76993051ADA65D64 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0960D4FC2FED814AC31F6079E6319296 /* Products */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				526E35DA2F289BE8E2935F3F45DA0EA2 /* Pods_TAAuthenticationUI_Example.framework */,
-				56848C5C7FB091406B5B5018590ACD0D /* Pods_TAAuthenticationUI_Tests.framework */,
-				8D24F91B1224831B764C189BF1C02CB1 /* TAAuthenticationUI.framework */,
+				61C8CC330A5CA84DA2F5F1D32AB07069 /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1F82E1640738E4EA66A8713C2F66CC67 /* TAAuthenticationUI */ = {
+		20EA08288F23855B79F44C1CA8F1E3F3 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				AE8D2D522A1B234900C073B1 /* Resource */,
-				D8940C4BA14E186AA50C9762D3C1A8DD /* Pod */,
-				3A0DCC1BD244F082E96086E9A8B8C37C /* Support Files */,
+				68DD463D99608F86D4FE656EF84F1FE4 /* LICENSE */,
+				15994483E90F3C20272415C132441215 /* README.md */,
+				8A49966547144941DFDC325DF157656C /* TAAuthenticationUI.podspec */,
 			);
-			name = TAAuthenticationUI;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		3A0DCC1BD244F082E96086E9A8B8C37C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				667E968587D1B870066F3567ADCF9418 /* TAAuthenticationUI.modulemap */,
-				37A64F46669C41C0A11B3684FE1BC270 /* TAAuthenticationUI-dummy.m */,
-				0D28A5995EF969AB5EFBC6636070DF03 /* TAAuthenticationUI-Info.plist */,
-				6DE7FD64DDD2B11527460954DB198C93 /* TAAuthenticationUI-prefix.pch */,
-				675096C2B0EFEAD7013FD2380D2ECC8B /* TAAuthenticationUI-umbrella.h */,
-				9AE513B5D2B808A4A1B081BB4BC8E8E1 /* TAAuthenticationUI.debug.xcconfig */,
-				B234890274085C0DD46EBB7C5FBF76B6 /* TAAuthenticationUI.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TAAuthenticationUI";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		3BDFE9BE91D56BB6C2DA16CF454BCF71 /* Pods-TAAuthenticationUI_Tests */ = {
@@ -174,12 +274,28 @@
 			path = "Target Support Files/Pods-TAAuthenticationUI_Tests";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		56447AF078D5B2F08EE7B27C5F6C8091 /* TAAuthenticationUI */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				AE8D2DF02A1CA12300C073B1 /* Configuration */,
+				AE8D2DF12A1CA13500C073B1 /* Authentication */,
+				AE8D2DF22A1CA14A00C073B1 /* Email */,
+				AE8D2DF32A1CA15700C073B1 /* Mobile */,
+				AE8D2DF42A1CA16200C073B1 /* PIN */,
+				AE8D2DEF2A1CA10200C073B1 /* UIElement */,
+				20EA08288F23855B79F44C1CA8F1E3F3 /* Pod */,
+				E0668E4612EFF923C077C1A2F6B5CB80 /* Support Files */,
 			);
-			name = iOS;
+			name = TAAuthenticationUI;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		5859CCC0ABE736D54D7BFD670A82F169 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4DBDEEA84D01EDB41FB547B1154D346 /* Alamofire */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		5F8A08A35DC54C15EE8B34BC2C9B0375 /* Pods-TAAuthenticationUI_Example */ = {
@@ -199,12 +315,28 @@
 			path = "Target Support Files/Pods-TAAuthenticationUI_Example";
 			sourceTree = "<group>";
 		};
-		7C6CDCF59E4A17C19773CE36D3010FAA /* Development Pods */ = {
+		5F92C9B9F679FE7DF64E95279E5DB79F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1F82E1640738E4EA66A8713C2F66CC67 /* TAAuthenticationUI */,
+				A52D1AFEE03B6011772E5FAE0AC50EEE /* Alamofire.modulemap */,
+				EA17C4197838FFA052EE7B9CAD9DD8D3 /* Alamofire-dummy.m */,
+				740AAA5D9614C4C73D0E5D0E6E1FA9F3 /* Alamofire-Info.plist */,
+				6ED8831F6FF4301FD74775E203143BC4 /* Alamofire-prefix.pch */,
+				4F833B93B04081CCB1F8033F4D88CDF4 /* Alamofire-umbrella.h */,
+				AD714F718D7CC54F064F15757F78C492 /* Alamofire.debug.xcconfig */,
+				306E2D1B9E4FC953243A0CACF97218A6 /* Alamofire.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		61C8CC330A5CA84DA2F5F1D32AB07069 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */,
+				FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7D3D7CCC0AD64A8BAF8DA11D2F523DC6 /* Targets Support Files */ = {
@@ -216,70 +348,163 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		AE8D2D522A1B234900C073B1 /* Resource */ = {
+		88B2192FEDDF9B05F6AFDA66821D254F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE8D2D5E2A1B23DE00C073B1 /* AuthenticationConfiguration.swift */,
-				AE8D2D532A1B23DD00C073B1 /* AuthenticationLogIn.swift */,
-				AE8D2D582A1B23DD00C073B1 /* AuthenticationLogIn.xib */,
-				AE8D2D572A1B23DD00C073B1 /* ComponentManager.swift */,
-				AE8D2D562A1B23DD00C073B1 /* Email_Address.swift */,
-				AE8D2D5D2A1B23DE00C073B1 /* Email_Address.xib */,
-				AE8D2D592A1B23DE00C073B1 /* Mobile_Number.swift */,
-				AE8D2D5A2A1B23DE00C073B1 /* Mobile_Number.xib */,
-				AE8D2D5B2A1B23DE00C073B1 /* PINView.swift */,
-				AE8D2D5C2A1B23DE00C073B1 /* PINView.xib */,
-				AE8D2D542A1B23DD00C073B1 /* RemoteLayer.swift */,
-				AE8D2D552A1B23DD00C073B1 /* Utility.swift */,
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				526E35DA2F289BE8E2935F3F45DA0EA2 /* Pods_TAAuthenticationUI_Example.framework */,
+				56848C5C7FB091406B5B5018590ACD0D /* Pods_TAAuthenticationUI_Tests.framework */,
+				8D24F91B1224831B764C189BF1C02CB1 /* TAAuthenticationUI.framework */,
 			);
-			path = Resource;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE8D2DEF2A1CA10200C073B1 /* UIElement */ = {
+			isa = PBXGroup;
+			children = (
+				AE8D2DE32A1B6B2100C073B1 /* TALable.swift */,
+				AE8D2DE52A1B6C2000C073B1 /* TAButton.swift */,
+				AE8D2DE72A1B6D7500C073B1 /* TATextFiled.swift */,
+				AE8D2DE92A1B6EC000C073B1 /* TAImage.swift */,
+				AE8D2DEB2A1B70D400C073B1 /* TAUIView.swift */,
+			);
+			path = UIElement;
+			sourceTree = "<group>";
+		};
+		AE8D2DF02A1CA12300C073B1 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				02199604992B330DD7D84EA66A4FEDD4 /* AuthenticationConfiguration.swift */,
+				102948AA34748B497AC09ECBFA1EC1A1 /* Utility.swift */,
+				AE8D2DED2A1C9EFC00C073B1 /* Colors.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		AE8D2DF12A1CA13500C073B1 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C289677DC42423B003DA77E4DE0055FB /* AuthenticationLogIn.swift */,
+				BFF813729FA47308B8DA047E2F7B7AE7 /* AuthenticationLogIn.xib */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		AE8D2DF22A1CA14A00C073B1 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				05BEE3699582B7231054BA2CA342BBE1 /* Email_Address.swift */,
+				009B91F33ABCD6FCB05252A3E4AE55FC /* Email_Address.xib */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		AE8D2DF32A1CA15700C073B1 /* Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				D254E3660D56CC9B0897F8FADDD9CE6B /* Mobile_Number.swift */,
+				8752C3F49385E1345958279471CC2D8C /* Mobile_Number.xib */,
+			);
+			path = Mobile;
+			sourceTree = "<group>";
+		};
+		AE8D2DF42A1CA16200C073B1 /* PIN */ = {
+			isa = PBXGroup;
+			children = (
+				E3574A66B603EB22994C79FF75D9CC37 /* PINView.swift */,
+				B4A0E42098A7763121F7FDA0AAA690D1 /* PINView.xib */,
+			);
+			path = PIN;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				7C6CDCF59E4A17C19773CE36D3010FAA /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				0960D4FC2FED814AC31F6079E6319296 /* Products */,
+				DFE9097F908E55E92FA27C4B20229EF9 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				5859CCC0ABE736D54D7BFD670A82F169 /* Pods */,
+				88B2192FEDDF9B05F6AFDA66821D254F /* Products */,
 				7D3D7CCC0AD64A8BAF8DA11D2F523DC6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		DFE9097F908E55E92FA27C4B20229EF9 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				56447AF078D5B2F08EE7B27C5F6C8091 /* TAAuthenticationUI */,
 			);
-			name = Frameworks;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		D8940C4BA14E186AA50C9762D3C1A8DD /* Pod */ = {
+		E0668E4612EFF923C077C1A2F6B5CB80 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D0E7A63E5DF2BF32DD600D40D2D6343E /* LICENSE */,
-				AE4A0D5DFDAFBD5D80E4716760D1270C /* README.md */,
-				C80FA0E2E942C36B4A5BAC2C3DA10AAA /* TAAuthenticationUI.podspec */,
+				4A50B98A423FF01C14BF4DBDB4D4A190 /* TAAuthenticationUI.modulemap */,
+				CD7DCBFCCFE796A06255652A9413B110 /* TAAuthenticationUI-dummy.m */,
+				9626EC6C07C0150B7C1CD4708842B680 /* TAAuthenticationUI-Info.plist */,
+				2AF25DE07795071176D45A8F9030826A /* TAAuthenticationUI-prefix.pch */,
+				C6EBD85E8C05393815967D2311BF5B58 /* TAAuthenticationUI-umbrella.h */,
+				5E334FE552E54E391F824A6E282B3A2B /* TAAuthenticationUI.debug.xcconfig */,
+				56DA74FF78F95A53265F6E1FA0671BE8 /* TAAuthenticationUI.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TAAuthenticationUI";
+			sourceTree = "<group>";
+		};
+		E4DBDEEA84D01EDB41FB547B1154D346 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				A436FE54641F2D107C7A36EEE579A711 /* AFError.swift */,
+				06058CC4DC17D97D816E6291418C188D /* Alamofire.swift */,
+				B1B614FCEF1E81C3ADCF667EBD4DD00A /* AlamofireExtended.swift */,
+				9B206CABA3E5C254320AB3AD7135A3CE /* AuthenticationInterceptor.swift */,
+				77226E8FC7B56CA1068824166848ADBF /* CachedResponseHandler.swift */,
+				B2D2AF8C623656CFD56B345D33E2C372 /* Combine.swift */,
+				DCAC7B7C6D7F8B176EF5F9FB19EC1561 /* Concurrency.swift */,
+				000339D58404A7D349EB962C6BE9E8C9 /* DispatchQueue+Alamofire.swift */,
+				366002D2484CDB3D84D2680DC45279B7 /* EventMonitor.swift */,
+				888DDD453AE7EBF323FD5C58AFC3C36A /* HTTPHeaders.swift */,
+				C18C61B77E806893D01FB3110BCFF9F3 /* HTTPMethod.swift */,
+				592CA37CBFF826891439B792D0D405E6 /* MultipartFormData.swift */,
+				24767B05C71B09A12209F0C3C0CE3CB9 /* MultipartUpload.swift */,
+				FEC207F43B02F0FCBF22B2B6ECAB6315 /* NetworkReachabilityManager.swift */,
+				7B82D59AE35645D50D3A84BED8E57BBC /* Notifications.swift */,
+				910E01056C25BE91CB35F0ED509E6324 /* OperationQueue+Alamofire.swift */,
+				88B1939EB3C8896EB69219C5F7BE0889 /* ParameterEncoder.swift */,
+				920D8F2C20208E53D68F47064E2AADAC /* ParameterEncoding.swift */,
+				60D19AFBBBB00EEE64CE63E5D70649F6 /* Protected.swift */,
+				67B27F0DC0BF19F460FD9E129E69629E /* RedirectHandler.swift */,
+				BDAE996B4E9D2DB7B306B601909915C7 /* Request.swift */,
+				8FDB01290164DBD601DFFB8BF2E99BB5 /* RequestCompression.swift */,
+				38F66307C1CA0F8DA20D1A6B668D1860 /* RequestInterceptor.swift */,
+				953E276D9A7B3CF40C485A7FB983B8E7 /* RequestTaskMap.swift */,
+				94F10AF7BA68CD513FE4BD12AC3E9325 /* Response.swift */,
+				22C5241B5E7FD5A8798EE42B92946C37 /* ResponseSerialization.swift */,
+				DDA707F68E714E23150CF6B884D329CA /* Result+Alamofire.swift */,
+				31FF77F272823F291CC1199FF15724F9 /* RetryPolicy.swift */,
+				E8EC1AD74376CBE8B70B0820F6A611BA /* ServerTrustEvaluation.swift */,
+				C2BD68F2EB883212FFD2A289C9C6AFFD /* Session.swift */,
+				C6965E5E3838DCDCC41AC01DA56A7D8D /* SessionDelegate.swift */,
+				79D0CEF5C05F64E7426A7256B88CE035 /* StringEncoding+Alamofire.swift */,
+				5152926B0E533873A8EED86D330834C0 /* URLConvertible+URLRequestConvertible.swift */,
+				4726E64C69480A59B59C7FAEADD2FEB4 /* URLEncodedFormEncoder.swift */,
+				EA0C1B9BA6444238057611BDA7CACFA5 /* URLRequest+Alamofire.swift */,
+				C748480AB66C4D2CE843052F31C9C0D4 /* URLSessionConfiguration+Alamofire.swift */,
+				40CA3C62864BF74A58495C935CB6F35D /* Validation.swift */,
+				5F92C9B9F679FE7DF64E95279E5DB79F /* Support Files */,
+			);
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		808525926615EC92C67B141A01852E0F /* Headers */ = {
+		A1FA0AC4FBC2C5D24F895C3D207371C3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CCB8D0871B5A22549FA7B6A675B08B0 /* TAAuthenticationUI-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8366E98A0B7B3EE8CB9C4ECFE028AB6E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9A01771DAECF8B0C35DF7D38D8E3B20 /* Pods-TAAuthenticationUI_Example-umbrella.h in Headers */,
+				87C7E66A9C615C690F66B873DA08D4FE /* Pods-TAAuthenticationUI_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,22 +516,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C633B03E43F18BEBB2D2ED11254225CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE9613CF7679B02E61AE817DE18F7C3 /* TAAuthenticationUI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED12AA7015568FEE3FAA009FC97DAAD5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F038D81F7ABAA15CF03246AD4BF334F7 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		20B3D5BEA7DEDC9F852B908CDBB8910A /* Pods-TAAuthenticationUI_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2F40223254D80E4AA62F67A27AFC9EE /* Build configuration list for PBXNativeTarget "Pods-TAAuthenticationUI_Example" */;
+			buildConfigurationList = 4CB5421CB2CDEAC6A67F7F31AFD9BEBA /* Build configuration list for PBXNativeTarget "Pods-TAAuthenticationUI_Example" */;
 			buildPhases = (
-				8366E98A0B7B3EE8CB9C4ECFE028AB6E /* Headers */,
-				88E0BC02ED97E0424F0B1AE2F36D682F /* Sources */,
-				E5678DE10FCBDE30F5A0F75878F8CE21 /* Frameworks */,
-				6B74C647EA1969DF29B9043774CF8AA2 /* Resources */,
+				A1FA0AC4FBC2C5D24F895C3D207371C3 /* Headers */,
+				55240F5861C95ABCC080F66F40497574 /* Sources */,
+				8F839DC481A6340544A3AD856B933F83 /* Frameworks */,
+				DF10379DFDE7DC79FAEEC0E8F66C3D07 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6AD457DB6AF9FE2C9CB378CDFA8AB72C /* PBXTargetDependency */,
+				266D44C1DC5B1D082E2FC8A584A904FC /* PBXTargetDependency */,
+				151B312C37EDCB314C5EA792501A0E42 /* PBXTargetDependency */,
 			);
 			name = "Pods-TAAuthenticationUI_Example";
 			productName = Pods_TAAuthenticationUI_Example;
@@ -315,16 +557,17 @@
 		};
 		BBF074117AEB87D3D94FA14753F0974D /* TAAuthenticationUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 19400AC1717795E2776D0985013D56B8 /* Build configuration list for PBXNativeTarget "TAAuthenticationUI" */;
+			buildConfigurationList = 31F69B56B335376F4E70EE8A9E93D1F8 /* Build configuration list for PBXNativeTarget "TAAuthenticationUI" */;
 			buildPhases = (
-				808525926615EC92C67B141A01852E0F /* Headers */,
-				C72A7B6A6096AA4E456C92CC8AE81366 /* Sources */,
-				A9204422929B758DF08C865BE128E888 /* Frameworks */,
-				E6E73E173DE95FA6204C1B55CBCEC660 /* Resources */,
+				C633B03E43F18BEBB2D2ED11254225CC /* Headers */,
+				5B7837448B38F2C04FE21262E32987E2 /* Sources */,
+				C1235159CCDE84659DB170215641A3A9 /* Frameworks */,
+				78E957B8C859B50E206AE76AC8DA52D8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FF7955FCB10088CE1FFE8A8085B1421E /* PBXTargetDependency */,
 			);
 			name = TAAuthenticationUI;
 			productName = TAAuthenticationUI;
@@ -343,11 +586,29 @@
 			buildRules = (
 			);
 			dependencies = (
-				57B9573178ED8781FD7A1984FC8D00EE /* PBXTargetDependency */,
+				C747C61E66DAF248AE25A388C215073A /* PBXTargetDependency */,
 			);
 			name = "Pods-TAAuthenticationUI_Tests";
 			productName = Pods_TAAuthenticationUI_Tests;
 			productReference = 56848C5C7FB091406B5B5018590ACD0D /* Pods_TAAuthenticationUI_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7761A54AFA2998F27E0BC2FACC2EB53 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				ED12AA7015568FEE3FAA009FC97DAAD5 /* Headers */,
+				277C3B3F937C6D40D2B777A164FAB89D /* Sources */,
+				5BF6E64D3157435E5797A5278584A4DC /* Frameworks */,
+				565FD2058706F22D2347B30C65280F30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -357,12 +618,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1420;
-				TargetAttributes = {
-					BBF074117AEB87D3D94FA14753F0974D = {
-						LastSwiftMigration = "";
-					};
-				};
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -373,10 +629,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 0960D4FC2FED814AC31F6079E6319296 /* Products */;
+			productRefGroup = 88B2192FEDDF9B05F6AFDA66821D254F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
 				20B3D5BEA7DEDC9F852B908CDBB8910A /* Pods-TAAuthenticationUI_Example */,
 				D4CF42451BC22CAC69B30FDD0D43391F /* Pods-TAAuthenticationUI_Tests */,
 				BBF074117AEB87D3D94FA14753F0974D /* TAAuthenticationUI */,
@@ -392,27 +649,107 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B74C647EA1969DF29B9043774CF8AA2 /* Resources */ = {
+		565FD2058706F22D2347B30C65280F30 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6E73E173DE95FA6204C1B55CBCEC660 /* Resources */ = {
+		78E957B8C859B50E206AE76AC8DA52D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE8D2D662A1B23DE00C073B1 /* Mobile_Number.xib in Resources */,
-				AE8D2D642A1B23DE00C073B1 /* AuthenticationLogIn.xib in Resources */,
-				AE8D2D682A1B23DE00C073B1 /* PINView.xib in Resources */,
-				AE8D2D692A1B23DE00C073B1 /* Email_Address.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF10379DFDE7DC79FAEEC0E8F66C3D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		277C3B3F937C6D40D2B777A164FAB89D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320C0D7A88AA812EFB20016BA1F5D7AE /* AFError.swift in Sources */,
+				81E6A0FF7F286008345ECFA3A2103FA8 /* Alamofire.swift in Sources */,
+				D09FBBADAF7C5C757AA5AB5DFE54BD25 /* Alamofire-dummy.m in Sources */,
+				F2415AE8678DE2698B7AD7D88B1A5C0F /* AlamofireExtended.swift in Sources */,
+				197457852FC83E905248660B0F930452 /* AuthenticationInterceptor.swift in Sources */,
+				04A8430BFC619C34E5F4D3878D094380 /* CachedResponseHandler.swift in Sources */,
+				385BC4B250B6A6DB8AAAEA77D5B7A46F /* Combine.swift in Sources */,
+				78B1DD1219182494A6AFAD26AAB20AA6 /* Concurrency.swift in Sources */,
+				8E698F134A953250D5834C8B83CDAD34 /* DispatchQueue+Alamofire.swift in Sources */,
+				82FD97FBBEFE51E2D3B434AF4954FC93 /* EventMonitor.swift in Sources */,
+				529173B31EFCD3D199E79866AFBEC86C /* HTTPHeaders.swift in Sources */,
+				F66CC47AD425C8D57BD149AFD09C2AFE /* HTTPMethod.swift in Sources */,
+				737747B9A98257DB58112C3A23686669 /* MultipartFormData.swift in Sources */,
+				732C29255F73EF3D83D49BD4F8FEAA8F /* MultipartUpload.swift in Sources */,
+				BAB17A1C6CAD14B3788973EAF8466C93 /* NetworkReachabilityManager.swift in Sources */,
+				3A59D8FBAF9A54906E3644AC80465AFB /* Notifications.swift in Sources */,
+				7D64BC3E6CAA4AB54EAC0AAADE93F578 /* OperationQueue+Alamofire.swift in Sources */,
+				B17D933C8F8BC6A4F91AA620D7D7A870 /* ParameterEncoder.swift in Sources */,
+				482B74C0548970BB9C095E2D8530E421 /* ParameterEncoding.swift in Sources */,
+				079F0820555C5B86C9FBD5EC6344137F /* Protected.swift in Sources */,
+				ECE6F23823454A8FDB3F97CE1A7CD182 /* RedirectHandler.swift in Sources */,
+				5B92A66A66BD639411C3D839A0F87B0C /* Request.swift in Sources */,
+				A523488C60BF961290D0B1ABB9ADACEC /* RequestCompression.swift in Sources */,
+				1AFD57838680DF58184FF94D14C7F3FF /* RequestInterceptor.swift in Sources */,
+				ECF2F956B37A4C28B228BC291A57AD6E /* RequestTaskMap.swift in Sources */,
+				AA721ECC2B36AFB7D9FE70C83E6D63F9 /* Response.swift in Sources */,
+				3FA127A261BB563409868A0DC21807B2 /* ResponseSerialization.swift in Sources */,
+				F6E94E8EE1CE35F49B9091BE8748587B /* Result+Alamofire.swift in Sources */,
+				643A7AFFB7AEB70B2B9B7E0926055023 /* RetryPolicy.swift in Sources */,
+				77AB6AF4BFC6DE016DA7C057B5799C84 /* ServerTrustEvaluation.swift in Sources */,
+				282FCD4EA8B05830E9108690B8CD336B /* Session.swift in Sources */,
+				E6251F02EE12804D1B66AE32E716E664 /* SessionDelegate.swift in Sources */,
+				C04739CBCEE445B66192BFA708655EDF /* StringEncoding+Alamofire.swift in Sources */,
+				D0560E8E2E5EB407B5D8E0381BF453FA /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				C8269B42DED12AB1F275648D0BD32E45 /* URLEncodedFormEncoder.swift in Sources */,
+				11CCD832BD537718892C6A216A38490A /* URLRequest+Alamofire.swift in Sources */,
+				67B10FEAA3B7E5387D20E76B1085E94D /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				D368E6F70C5E6998548A72E65F92432D /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55240F5861C95ABCC080F66F40497574 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7916DFD551EF2CC52263C6AB5AE991FB /* Pods-TAAuthenticationUI_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7837448B38F2C04FE21262E32987E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56BFD765EAA507ADE8A3C0C67642526 /* AuthenticationConfiguration.swift in Sources */,
+				AE8D2DEA2A1B6EC000C073B1 /* TAImage.swift in Sources */,
+				AE8D2DE62A1B6C2000C073B1 /* TAButton.swift in Sources */,
+				3E171253B53FDE3B7FCCBB08D6703F4C /* AuthenticationLogIn.swift in Sources */,
+				70D5CCD40D87D7997A70B534F49C1F5E /* AuthenticationLogIn.xib in Sources */,
+				AE8D2DE42A1B6B2100C073B1 /* TALable.swift in Sources */,
+				7E7A29F67A4518941BCEEA50050FF7DD /* Email_Address.swift in Sources */,
+				AE8D2DEC2A1B70D400C073B1 /* TAUIView.swift in Sources */,
+				0E4A2587362CDAE3DE72A50014F32602 /* Email_Address.xib in Sources */,
+				8D83AC05638BDB4A9DCF83CFAA98BAB6 /* Mobile_Number.swift in Sources */,
+				9EF8DD841C09EA438A8F022C205F1EDC /* Mobile_Number.xib in Sources */,
+				AE8D2DEE2A1C9EFC00C073B1 /* Colors.swift in Sources */,
+				AE8D2DE82A1B6D7500C073B1 /* TATextFiled.swift in Sources */,
+				01750333B05970C5F728A38609C378FE /* PINView.swift in Sources */,
+				39D091B95CB8B55F6D1CEBE25E71A57E /* PINView.xib in Sources */,
+				AFD90D4EE25C74C87911BF86BB104DB7 /* TAAuthenticationUI-dummy.m in Sources */,
+				7A7D7175976079BD9181D2EE58E20180 /* Utility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76A24B5D9998CD78A6F01D5C38073E38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,81 +758,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88E0BC02ED97E0424F0B1AE2F36D682F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				204C03BB8A912BE8AD61AB450C064130 /* Pods-TAAuthenticationUI_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C72A7B6A6096AA4E456C92CC8AE81366 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AE8D2D612A1B23DE00C073B1 /* Utility.swift in Sources */,
-				AE8D2D6A2A1B23DE00C073B1 /* AuthenticationConfiguration.swift in Sources */,
-				10A4993B53E3D890FCE96DA020DF783F /* TAAuthenticationUI-dummy.m in Sources */,
-				AE8D2D672A1B23DE00C073B1 /* PINView.swift in Sources */,
-				AE8D2D602A1B23DE00C073B1 /* RemoteLayer.swift in Sources */,
-				AE8D2D622A1B23DE00C073B1 /* Email_Address.swift in Sources */,
-				AE8D2D5F2A1B23DE00C073B1 /* AuthenticationLogIn.swift in Sources */,
-				AE8D2D652A1B23DE00C073B1 /* Mobile_Number.swift in Sources */,
-				AE8D2D632A1B23DE00C073B1 /* ComponentManager.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		57B9573178ED8781FD7A1984FC8D00EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-TAAuthenticationUI_Example";
-			target = 20B3D5BEA7DEDC9F852B908CDBB8910A /* Pods-TAAuthenticationUI_Example */;
-			targetProxy = 2004CDD4FF472B89D8C0737A97022043 /* PBXContainerItemProxy */;
-		};
-		6AD457DB6AF9FE2C9CB378CDFA8AB72C /* PBXTargetDependency */ = {
+		151B312C37EDCB314C5EA792501A0E42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TAAuthenticationUI;
 			target = BBF074117AEB87D3D94FA14753F0974D /* TAAuthenticationUI */;
-			targetProxy = 2B112DFEECDF8626DE2F30CF0A34BEF5 /* PBXContainerItemProxy */;
+			targetProxy = A47914632FCB2D98FAF34D5FE350126D /* PBXContainerItemProxy */;
+		};
+		266D44C1DC5B1D082E2FC8A584A904FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 5469C0FA982147367415301403B8A5BC /* PBXContainerItemProxy */;
+		};
+		C747C61E66DAF248AE25A388C215073A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TAAuthenticationUI_Example";
+			target = 20B3D5BEA7DEDC9F852B908CDBB8910A /* Pods-TAAuthenticationUI_Example */;
+			targetProxy = 66BF97E71EFE4AF666E39526D839D2EE /* PBXContainerItemProxy */;
+		};
+		FF7955FCB10088CE1FFE8A8085B1421E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 759165DBD650C5DAD8AB67811739F428 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2B96036DF03FBC1A69F649DEF88CDE9E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B234890274085C0DD46EBB7C5FBF76B6 /* TAAuthenticationUI.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TAAuthenticationUI/TAAuthenticationUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TAAuthenticationUI/TAAuthenticationUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TAAuthenticationUI/TAAuthenticationUI.modulemap";
-				PRODUCT_MODULE_NAME = TAAuthenticationUI;
-				PRODUCT_NAME = TAAuthenticationUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		31160BFA7F4B17697AEAB7D02F13BBAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3B56AA6024C0B30DC22333E9AD425CC /* Pods-TAAuthenticationUI_Tests.release.xcconfig */;
@@ -512,7 +804,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TAAuthenticationUI_Tests/Pods-TAAuthenticationUI_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TAAuthenticationUI_Tests/Pods-TAAuthenticationUI_Tests.modulemap";
@@ -546,7 +838,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TAAuthenticationUI_Tests/Pods-TAAuthenticationUI_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TAAuthenticationUI_Tests/Pods-TAAuthenticationUI_Tests.modulemap";
@@ -563,9 +855,9 @@
 			};
 			name = Debug;
 		};
-		648678DE53DE0FCF3F855CF9890BB6C5 /* Debug */ = {
+		48C9DF70500E3F4694CD54A48CDB52A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 486CDDDA6F12360D1AA6EF9404F5BD14 /* Pods-TAAuthenticationUI_Example.debug.xcconfig */;
+			baseConfigurationReference = 69B99C27300EC443C99F14F6C34D4F90 /* Pods-TAAuthenticationUI_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -579,7 +871,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TAAuthenticationUI_Example/Pods-TAAuthenticationUI_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TAAuthenticationUI_Example/Pods-TAAuthenticationUI_Example.modulemap";
@@ -591,10 +883,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -631,7 +924,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -658,45 +950,10 @@
 			};
 			name = Release;
 		};
-		B3630B49A2F8920D44289FFD70D843AB /* Release */ = {
+		8064959218D7EE596EF3D969C42B12B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69B99C27300EC443C99F14F6C34D4F90 /* Pods-TAAuthenticationUI_Example.release.xcconfig */;
+			baseConfigurationReference = 5E334FE552E54E391F824A6E282B3A2B /* TAAuthenticationUI.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TAAuthenticationUI_Example/Pods-TAAuthenticationUI_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TAAuthenticationUI_Example/Pods-TAAuthenticationUI_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D01DC3B1F636D20EAB8541B235103756 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AE513B5D2B808A4A1B081BB4BC8E8E1 /* TAAuthenticationUI.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -709,7 +966,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TAAuthenticationUI/TAAuthenticationUI-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TAAuthenticationUI/TAAuthenticationUI-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TAAuthenticationUI/TAAuthenticationUI.modulemap";
 				PRODUCT_MODULE_NAME = TAAuthenticationUI;
@@ -717,8 +974,70 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		850A80464736297E6FD25F7217C898B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56DA74FF78F95A53265F6E1FA0671BE8 /* TAAuthenticationUI.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TAAuthenticationUI/TAAuthenticationUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TAAuthenticationUI/TAAuthenticationUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TAAuthenticationUI/TAAuthenticationUI.modulemap";
+				PRODUCT_MODULE_NAME = TAAuthenticationUI;
+				PRODUCT_NAME = TAAuthenticationUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7D9E7CD650F798EC835C67DACFEBC4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD714F718D7CC54F064F15757F78C492 /* Alamofire.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -760,7 +1079,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -792,23 +1110,88 @@
 			};
 			name = Debug;
 		};
+		F5F3306F2C09AB4B623C805497E28D51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 306E2D1B9E4FC953243A0CACF97218A6 /* Alamofire.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F7A9B7DBF6B0525252F5D36EA7FD029A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 486CDDDA6F12360D1AA6EF9404F5BD14 /* Pods-TAAuthenticationUI_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TAAuthenticationUI_Example/Pods-TAAuthenticationUI_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TAAuthenticationUI_Example/Pods-TAAuthenticationUI_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		19400AC1717795E2776D0985013D56B8 /* Build configuration list for PBXNativeTarget "TAAuthenticationUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D01DC3B1F636D20EAB8541B235103756 /* Debug */,
-				2B96036DF03FBC1A69F649DEF88CDE9E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		31928FB88F1BA4BA4758EAE270F9FF97 /* Build configuration list for PBXNativeTarget "Pods-TAAuthenticationUI_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D112555C314ABD3382C4430447AD94B /* Debug */,
 				31160BFA7F4B17697AEAB7D02F13BBAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31F69B56B335376F4E70EE8A9E93D1F8 /* Build configuration list for PBXNativeTarget "TAAuthenticationUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8064959218D7EE596EF3D969C42B12B7 /* Debug */,
+				850A80464736297E6FD25F7217C898B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -822,11 +1205,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2F40223254D80E4AA62F67A27AFC9EE /* Build configuration list for PBXNativeTarget "Pods-TAAuthenticationUI_Example" */ = {
+		4CB5421CB2CDEAC6A67F7F31AFD9BEBA /* Build configuration list for PBXNativeTarget "Pods-TAAuthenticationUI_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				648678DE53DE0FCF3F855CF9890BB6C5 /* Debug */,
-				B3630B49A2F8920D44289FFD70D843AB /* Release */,
+				F7A9B7DBF6B0525252F5D36EA7FD029A /* Debug */,
+				48C9DF70500E3F4694CD54A48CDB52A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7761A54AFA2998F27E0BC2FACC2EB53 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D9E7CD650F798EC835C67DACFEBC4F /* Debug */,
+				F5F3306F2C09AB4B623C805497E28D51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

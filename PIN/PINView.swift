@@ -45,7 +45,7 @@ public class PINView: UIView{
     weak var delegatePinView: GenericPINViewDelegate?
     public var pinViewConfig = AuthenticationConfiguration()
     public var myUtility = Utility()
-    public weak var pinController: UIViewController?
+    public weak var controller: UIViewController?
     
     //MARK: System methods
     required init?(coder aDecoder: NSCoder) {
@@ -84,7 +84,7 @@ public class PINView: UIView{
         txtFifth.textColor = .black
         txtSixth.textColor = .black
         
-        var lblArr = [txtFirst,txtSecond,txtthird,txtFourth,txtFifth,txtSixth]
+        let lblArr = [txtFirst,txtSecond,txtthird,txtFourth,txtFifth,txtSixth]
         for lbl in lblArr {
             lbl!.layer.borderColor = UIColor.black.withAlphaComponent(0.30).cgColor
             lbl!.clipsToBounds = true
@@ -274,64 +274,144 @@ public class PINView: UIView{
         let nib = bundel.loadNibNamed(nibName, owner: self)?.first as? UIView
         return nib
     }
+    //MARK: lables
+  public func setThemsForLable(lbl:UILabel, config:TALable){
+      lbl.text = config.TAText
+      lbl.textColor = config.TATextColor
+      lbl.font = config.TATextFont
+      lbl.numberOfLines = config.TATextNumberOfLines
+      lbl.textAlignment = config.TATextAlignment
+  }
+      
+  //MARK: Valide Button
+  public func setThemsForButton(btn:UIButton, config:TAButton){
+      btn.setTitle( config.TABtnTitleText, for: .normal)
+      btn.setTitleColor(config.TABtnTitleTextColor, for: .normal)
+      btn.titleLabel?.font = config.TABtnTitleTextFont
+      btn.backgroundColor = config.TABtnBackgrounColor
+      btn.layer.cornerRadius = CGFloat(config.TABtnCornerRadius)
+      btn.layer.masksToBounds = config.TABtnMasksToBounds
+  }
+    //MARK: ResendPIN Button
+    public func setThemsForResentPINButton(btn:UIButton, config: TAButton)
+    {
+        btn.setTitle( config.TABtnTitleText, for: .normal)
+        btn.setTitleColor(config.TABtnTitleTextColor, for: .normal)
+        btn.titleLabel?.font = config.TABtnTitleTextFont
+        btn.backgroundColor = config.TABtnBackgrounColor
+    }
+  
+  
+  //MARK: TextField
+  public func setThemsForTextField(textfiled: UITextField, config:TATextFiled)
+  {
+      textfiled.placeholder  = config.TATextfiledPlaceHolderText
+      textfiled.textColor   = config.TATextfiledPlaceHolderTextColor
+      textfiled.font = config.TATextfiledPlaceHolderTextFont
+      textfiled.layer.borderColor = config.TATextfiledPlaceHolderTextColor.cgColor
+      textfiled.layer.borderWidth = CGFloat(config.TATextfiledPlaceHolderBorderWidth)
+  }
+  
+  //MARK: HeaderView
+  public func setThemsForHeaderView(view:UIView, config: TAUIView)
+  {
+      view.backgroundColor = config.TAviewBackgroundColor
+  }
+  
+  //MARK: HeaderView
+  public func setThemsForHeaderViewImageORLogo(img: UIImageView, config: TAImage)
+  {
+      img.image = config.TAImageLogo
+  }
     
+    //MARK: SetDefaultThems
     public func setPINDefaultThemes(){
-        let pinViewConfig = AuthenticationConfiguration()
-        pinViewConfig.logo = UIImage()
-        pinViewConfig.textColor = .black
-        pinViewConfig.font = .boldSystemFont(ofSize: 18)
-        pinViewConfig.textAlignment = .left
-        pinViewConfig.backgroundColor = .gray
-        pinViewConfig.text = "LogIn"
-        pinViewConfig.pinText = "Please enter  your 6-Digit PIN."
-        pinViewConfig.viewType = .pinView
-        pinViewConfig.resendPinBtnFont = .systemFont(ofSize: 12)
-        pinViewConfig.btnFont = .boldSystemFont(ofSize: 18)
-        pinViewConfig.spaceViewBorderColor = .black
-        pinViewConfig.resendPinBtnTextColor = .blue
-        pinViewConfig.btnBackgroundColor = .green
-        pinViewConfig.btnTitle = "ValideBtn"
-        pinViewConfig.resendPinBtnBackgroundColor = .white
-        pinViewConfig.containerViewBorderWidth = 1
-       
-        
+        let pinViewConfig = themsConfiguration()
         self.setThemeWithPINConfiguration(config: pinViewConfig)
     }
     
+    //MARK: Configure DefaultThems
+    func themsConfiguration() -> AuthenticationConfiguration
+    {
+        let config = AuthenticationConfiguration()
+        let lblHeader = TALable()
+        let lblFirst = TALable()
+        let lblSecond = TALable()
+        let viewHeader = TAUIView()
+        let btnValide = TAButton()
+        let btnResend = TAButton()
+        let imgLogo = TAImage()
+        
+        //MARK: HeaderView Txt
+        lblHeader.TAText = "Log in"
+        lblHeader.TATextColor = .textLblColor
+        lblHeader.TATextAlignment = .left
+        lblHeader.TATextFont = .boldSystemFont(ofSize: 20)
+        
+        //MARK: Description Txt
+        lblFirst.TAText = "Please enter your 6-Digit PIN"
+        lblFirst.TATextColor = .textLblColor
+        lblFirst.TATextAlignment = .left
+        lblFirst.TATextFont = .boldSystemFont(ofSize: 14)
+        
+        //MARK: PIN Txt
+        lblSecond.TAText = "PIN"
+        lblSecond.TATextColor = .textLblColor
+        lblSecond.TATextAlignment = .left
+        lblSecond.TATextFont = .boldSystemFont(ofSize: 14)
+        
+        //MARK: HeaderView
+        viewHeader.TAviewBackgroundColor = .headerBackgroundColor
+        
+        //MARK: valide Btn
+        btnValide.TABtnTitleText = "Validate    ->"
+        btnValide.TABtnTitleTextColor = .btnTitleColor
+        btnValide.TABtnBackgrounColor = .btnBackgroundColor
+        btnValide.TABtnTitleTextFont = .boldSystemFont(ofSize: 18)
+        btnValide.TABtnCornerRadius = 4
+        btnValide.TABtnMasksToBounds =  true
+        
+        //MARK: Resend Btn
+        btnResend.TABtnTitleText = "Did not receive PIN? Click here to Resend"
+        btnResend.TABtnTitleTextColor = .textLblColor
+        btnResend.TABtnBackgrounColor = .btnBackgroundColor
+        btnResend.TABtnTitleTextFont = .boldSystemFont(ofSize: 12)
+        btnResend.TABtnBackgrounColor = .btnTitleColor
+    
+        
+        config.headerLbl = lblHeader
+        config.firstLbl = lblFirst
+        config.secondLbl = lblSecond
+        config.headerView = viewHeader
+        config.logoImage = imgLogo
+        config.valideBtn = btnValide
+        config.resendPINBtn = btnResend
+        
+        return config
+    }
+    
+    //MARK: Set Configurations
     public func setThemeWithPINConfiguration(config:AuthenticationConfiguration)
     {
-        self.viewHeader.backgroundColor = config.backgroundColor
-        self.lblHeaderLogin.text = config.text
-        self.lblHeaderLogin.font = config.font
-        self.lblHeaderLogin.textColor = config.textColor
-        self.imgHeaderLogo.image = config.logo
-        self.lblPinDescription.text = config.pinText
-        self.btnResendPin.titleLabel?.text = config.resendPinBtnTitleText
-        self.btnResendPin.titleLabel?.textColor = config.textColor
-        self.btnResendPin.titleLabel?.font = config.btnFont
-        self.btnResendPin.backgroundColor = config.btnBackgroundColor
-        self.btnValidate.titleLabel?.text = config.btnTitle
-        self.btnValidate.titleLabel?.textColor = config.textColor
-        self.btnValidate.titleLabel?.font = config.btnFont
-        self.btnValidate.backgroundColor = config.btnBackgroundColor
-        self.btnResendPin.backgroundColor = config.resendPinBtnBackgroundColor
-        self.btnResendPin.titleLabel?.textColor = config.resendPinBtnTextColor
-        self.btnResendPin.titleLabel?.font = config.resendPinBtnFont
-        self.viewSpaceHeight.layer.borderColor = config.spaceViewBorderColor.cgColor
-        self.viewContainerPIN.layer.borderWidth = CGFloat(config.containerViewBorderWidth)
-        self.viewContainerPIN.layer.borderColor = config.containerViewBorderColor.cgColor
-       
+        self.setThemsForHeaderView(view: viewHeader, config: config.headerView)
+        self.setThemsForLable(lbl: lblHeaderLogin, config: config.headerLbl)
+        self.setThemsForLable(lbl: lblPin, config: config.secondLbl)
+        self.setThemsForLable(lbl: lblPinDescription, config: config.firstLbl)
+        self.setThemsForButton(btn: btnValidate, config: config.valideBtn)
+        self.setThemsForResentPINButton(btn: btnResendPin, config: config.resendPINBtn)
+        self.setThemsForHeaderViewImageORLogo(img: imgHeaderLogo, config: config.logoImage)
         
     }
     
     //MARK: IBAction
-    @IBAction func sendPinAction(_ sender:UIButton){
+    @IBAction func sendPinAction(_ sender:UIButton)
+    {
         if pinVarTf.text != nil && pinVarTf.text != "" && pinVarTf.text?.count == 6
         {
             delegate?.validateBtnAction(pinNumber: (pinVarTf.text?.trimmingCharacters(in: .whitespaces))!)
         }
         else {
-            myUtility.showAlter(title: "PIN", msg: "Invalide Pin", action: "OK", viewController: self.pinController!)
+            myUtility.showAlter(title: "PIN", msg: "Invalide Pin", action: "OK", viewController: self.controller!)
         }
     }
     
@@ -344,7 +424,9 @@ public class PINView: UIView{
     }
 }
 
-extension PINView: UITextViewDelegate, UITextFieldDelegate{
+//MARK: UITextFieldDelegate
+extension PINView: UITextViewDelegate, UITextFieldDelegate
+{
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == pinVarTf
         {
@@ -460,6 +542,7 @@ extension PINView: UITextViewDelegate, UITextFieldDelegate{
     }
 }
 
+//MARK: UITextFieldDelegate
 extension UITextField {
     
     func fullTextWith(range: NSRange, replacementString: String) -> String? {

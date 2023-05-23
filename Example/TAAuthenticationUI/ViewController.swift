@@ -13,13 +13,35 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        
+        var authComp = AuthenticationLogIn()
+        authComp.controller = self
+        authComp.setDefaultThems()
+        authComp.frame = self.view.bounds
+        authComp.frame.origin.x = 10
+        authComp.frame.size.width = authComp.frame.size.width - 10
+        //self.view.addSubview(authComp)
+        
+        var authEmail = Email_Address()
+        authEmail.controller = self
+        authEmail.setEmailDefaultThemes()
+        authEmail.frame = self.view.bounds
+        self.view.addSubview(authEmail)
+        
+        var authMobile = Mobile_Number()
+        authMobile.controller = self
+        authMobile.setMobileDefaultThemes()
+        authMobile.frame = self.view.bounds
+       // self.view.addSubview(authMobile)
+        
+        var authPIN = PINView()
+        authPIN.controller = self
+        authPIN.setPINDefaultThemes()
+        authPIN.frame = self.view.bounds
+       // self.view.addSubview(authPIN)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 }
 

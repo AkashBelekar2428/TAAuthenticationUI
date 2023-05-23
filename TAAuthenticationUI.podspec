@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TAAuthenticationUI'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'Easy to use TAAuthenticationUI.'
 
 # This description is used to generate tags and improve search results.
@@ -25,12 +25,13 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'akashbelekar2428' => 'akashbelekar108@gmail.com' }
-  s.source           = { :git => 'https://github.com/akashbelekar2428/TAAuthenticationUI.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/AkashBelekar2428/TAAuthenticationUI.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.ios.deployment_target = '16.2'
   s.swift_version = '5.0'
-  s.source_files = 'Resource/**/*'
   
+  s.source_files = 'TAAuthenticationUI/**/*'
+ # Resource
   # s.resource_bundles = {
   #   'MFAuthAccess' => ['MFAuthAccess/Assets/*.png']
   # }

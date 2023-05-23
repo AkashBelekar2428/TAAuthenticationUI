@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-public class Utility:UIViewController {
+public class Utility {
     
     //MARK: Singletone
     static let shared = Utility()
