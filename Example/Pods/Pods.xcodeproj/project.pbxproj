@@ -278,7 +278,6 @@
 		56447AF078D5B2F08EE7B27C5F6C8091 /* TAAuthenticationUI */ = {
 			isa = PBXGroup;
 			children = (
-				AEC40AC02A1DD35D009C2124 /* Assest */,
 				AE8D2DF02A1CA12300C073B1 /* Configuration */,
 				AE8D2DF12A1CA13500C073B1 /* Authentication */,
 				AE8D2DF22A1CA14A00C073B1 /* Email */,
@@ -416,14 +415,6 @@
 			);
 			path = PIN;
 			sourceTree = "<group>";
-		};
-		AEC40AC02A1DD35D009C2124 /* Assest */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assest;
-			sourceTree = "<group>";
-			usesTabs = 0;
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;

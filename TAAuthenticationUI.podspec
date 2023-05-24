@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TAAuthenticationUI'
-  s.version          = '1.1.2'
+  s.version          = '1.1.3'
   s.summary          = 'Easy to use TAAuthenticationUI.'
 
 # This description is used to generate tags and improve search results.
@@ -30,8 +30,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '16.2'
   s.swift_version = '5.0'
   
-  s.source_files = ['Assest/**/*',
-                    'Configuration/**/*',
+  s.source_files = ['Configuration/**/*',
                     'Authentication/**/*',
                     'Email/**/*',
                     'Mobile/**/*',
