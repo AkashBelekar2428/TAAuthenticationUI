@@ -15,7 +15,7 @@
                 <outlet property="btnForgotPassword" destination="cgg-9a-tSy" id="y9O-FY-7zC"/>
                 <outlet property="btnReminder" destination="BDO-q7-3Pr" id="1cJ-RQ-yBh"/>
                 <outlet property="btnValidate" destination="iKb-jf-R6d" id="6MP-lM-UwH"/>
-                <outlet property="imgHeaderLogo" destination="Zun-7V-tew" id="qgO-0a-N0p"/>
+                <outlet property="imgHeaderLogo" destination="Zun-7V-tew" id="Ple-8a-hch"/>
                 <outlet property="lblAuthType" destination="IE3-r2-HUt" id="RCH-dL-lqs"/>
                 <outlet property="lblHeaderLogin" destination="W1c-EW-efD" id="mOC-dI-6wN"/>
                 <outlet property="lblPassword" destination="Twh-qJ-vBd" id="WlZ-9u-p7B"/>
@@ -37,16 +37,17 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLT-8O-FFj">
                             <rect key="frame" x="0.0" y="0.0" width="539" height="60"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Zun-7V-tew">
-                                    <rect key="frame" x="12" y="6.6666666666666643" width="100" height="47"/>
-                                    <color key="tintColor" red="0.084647797050000001" green="0.60673338170000002" blue="0.83490628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="Zun-7V-tew">
+                                    <rect key="frame" x="12" y="5" width="80" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="0CJ-T8-4ju"/>
-                                        <constraint firstAttribute="width" constant="100" id="cly-sY-0dI"/>
+                                        <constraint firstAttribute="width" constant="80" id="cly-sY-0dI"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1c-EW-efD">
-                                    <rect key="frame" x="128" y="30" width="399" height="0.0"/>
+                                    <rect key="frame" x="108" y="30" width="419" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -236,7 +237,7 @@
     </objects>
     <resources>
         <image name="eye" catalog="system" width="128" height="79"/>
-        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="logo2" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

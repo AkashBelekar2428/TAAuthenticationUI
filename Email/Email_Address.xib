@@ -33,16 +33,16 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9F-3Q-JQg">
                             <rect key="frame" x="0.0" y="0.0" width="490" height="60"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PaH-4f-NcS">
-                                    <rect key="frame" x="12" y="5" width="100" height="50"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="PaH-4f-NcS">
+                                    <rect key="frame" x="12" y="5" width="80" height="50"/>
                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="lyg-1h-rAh"/>
-                                        <constraint firstAttribute="width" constant="100" id="pS1-Yy-jxh"/>
+                                        <constraint firstAttribute="width" constant="80" id="pS1-Yy-jxh"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5h-1f-m71">
-                                    <rect key="frame" x="128" y="30" width="350" height="0.0"/>
+                                    <rect key="frame" x="108" y="30" width="370" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -115,7 +115,6 @@
                             </constraints>
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <buttonConfiguration key="configuration" style="plain"/>
                             <connections>
                                 <action selector="sendPINClicked:" destination="-1" eventType="touchUpInside" id="uY2-Vl-H3o"/>
                             </connections>
@@ -150,6 +149,7 @@
         </view>
     </objects>
     <resources>
+        <image name="logo2" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

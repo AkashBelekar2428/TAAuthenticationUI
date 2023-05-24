@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TAAuthenticationUI'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'Easy to use TAAuthenticationUI.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,14 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '16.2'
   s.swift_version = '5.0'
   
-  s.source_files = 'TAAuthenticationUI/**/*'
+  s.source_files = ['Assest/**/*',
+                    'Configuration/**/*',
+                    'Authentication/**/*',
+                    'Email/**/*',
+                    'Mobile/**/*',
+                    'PIN/**/*',
+                    'UIElement/**/*'
+                   ]
  # Resource
   # s.resource_bundles = {
   #   'MFAuthAccess' => ['MFAuthAccess/Assets/*.png']

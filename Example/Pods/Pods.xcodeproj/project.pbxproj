@@ -52,6 +52,7 @@
 		AE8D2DEA2A1B6EC000C073B1 /* TAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2DE92A1B6EC000C073B1 /* TAImage.swift */; };
 		AE8D2DEC2A1B70D400C073B1 /* TAUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2DEB2A1B70D400C073B1 /* TAUIView.swift */; };
 		AE8D2DEE2A1C9EFC00C073B1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D2DED2A1C9EFC00C073B1 /* Colors.swift */; };
+		AEC40AC22A1DD36E009C2124 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC40AC12A1DD36E009C2124 /* Images.xcassets */; };
 		AFD90D4EE25C74C87911BF86BB104DB7 /* TAAuthenticationUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7DCBFCCFE796A06255652A9413B110 /* TAAuthenticationUI-dummy.m */; };
 		B17D933C8F8BC6A4F91AA620D7D7A870 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1939EB3C8896EB69219C5F7BE0889 /* ParameterEncoder.swift */; };
 		BAB17A1C6CAD14B3788973EAF8466C93 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC207F43B02F0FCBF22B2B6ECAB6315 /* NetworkReachabilityManager.swift */; };
@@ -174,6 +175,7 @@
 		AE8D2DE92A1B6EC000C073B1 /* TAImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAImage.swift; sourceTree = "<group>"; };
 		AE8D2DEB2A1B70D400C073B1 /* TAUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUIView.swift; sourceTree = "<group>"; };
 		AE8D2DED2A1C9EFC00C073B1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AEC40AC12A1DD36E009C2124 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B1B614FCEF1E81C3ADCF667EBD4DD00A /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		B2D2AF8C623656CFD56B345D33E2C372 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
 		B4A0E42098A7763121F7FDA0AAA690D1 /* PINView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PINView.xib; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				8A49966547144941DFDC325DF157656C /* TAAuthenticationUI.podspec */,
 			);
 			name = Pod;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		3BDFE9BE91D56BB6C2DA16CF454BCF71 /* Pods-TAAuthenticationUI_Tests */ = {
@@ -277,14 +280,13 @@
 		56447AF078D5B2F08EE7B27C5F6C8091 /* TAAuthenticationUI */ = {
 			isa = PBXGroup;
 			children = (
+				AEC40AC02A1DD35D009C2124 /* Assest */,
 				AE8D2DF02A1CA12300C073B1 /* Configuration */,
 				AE8D2DF12A1CA13500C073B1 /* Authentication */,
 				AE8D2DF22A1CA14A00C073B1 /* Email */,
 				AE8D2DF32A1CA15700C073B1 /* Mobile */,
 				AE8D2DF42A1CA16200C073B1 /* PIN */,
 				AE8D2DEF2A1CA10200C073B1 /* UIElement */,
-				20EA08288F23855B79F44C1CA8F1E3F3 /* Pod */,
-				E0668E4612EFF923C077C1A2F6B5CB80 /* Support Files */,
 			);
 			name = TAAuthenticationUI;
 			path = ../..;
@@ -417,6 +419,14 @@
 			path = PIN;
 			sourceTree = "<group>";
 		};
+		AEC40AC02A1DD35D009C2124 /* Assest */ = {
+			isa = PBXGroup;
+			children = (
+				AEC40AC12A1DD36E009C2124 /* Images.xcassets */,
+			);
+			path = Assest;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +443,8 @@
 			isa = PBXGroup;
 			children = (
 				56447AF078D5B2F08EE7B27C5F6C8091 /* TAAuthenticationUI */,
+				E0668E4612EFF923C077C1A2F6B5CB80 /* Support Files */,
+				20EA08288F23855B79F44C1CA8F1E3F3 /* Pod */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -449,7 +461,7 @@
 				56DA74FF78F95A53265F6E1FA0671BE8 /* TAAuthenticationUI.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TAAuthenticationUI";
+			path = TAAuthenticationUI;
 			sourceTree = "<group>";
 		};
 		E4DBDEEA84D01EDB41FB547B1154D346 /* Alamofire */ = {
@@ -660,6 +672,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC40AC22A1DD36E009C2124 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

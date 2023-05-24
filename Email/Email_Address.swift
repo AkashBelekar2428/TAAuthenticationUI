@@ -161,6 +161,9 @@ public class Email_Address: UIView{
         btnValide.TABtnCornerRadius = 8
         btnValide.TABtnMasksToBounds =  true
         
+        //MARK: Header Img Logo
+        imgLogo.TAImageLogo = UIImage(named: "\("logo2")")!
+        
         //MARK: Assign Values
         config.headerLbl = lblHeader
         config.firstLbl = lblFirst
@@ -168,6 +171,7 @@ public class Email_Address: UIView{
         config.logoImage = imgLogo
         config.firstTextfiled = tfFirst
         config.valideBtn = btnValide
+        config.logoImage = imgLogo
         
         return config
     }
@@ -176,11 +180,17 @@ public class Email_Address: UIView{
     public func setThemeWithEmailConfiguration(config:AuthenticationConfiguration){
         
         self.setThemsForHeaderView(view: viewHeader, config: config.headerView)
+        
         self.setThemsForHeaderLable(lbl: lblHeaderLogin, config: config.headerLbl)
+        
         self.setThemsForTextField(textfiled: tfEmail, config: config.firstTextfiled)
+        
         self.setThemsForButton(btn: btnSendPIN, config: config.valideBtn)
+        
         self.setThemsForHeaderLable(lbl: lblEmailAddress, config: config.firstLbl)
+        
         self.setThemsForHeaderViewImageORLogo(img: imgHeaderLogo, config: config.logoImage)
+        
         self.setThemsForHeaderView(view: viewSpaceHeight, config: config.headerView)
         
     }

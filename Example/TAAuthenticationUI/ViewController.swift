@@ -8,6 +8,7 @@
 
 import UIKit
 import TAAuthenticationUI
+ 
 
 class ViewController: UIViewController {
 
@@ -21,13 +22,13 @@ class ViewController: UIViewController {
         authComp.frame = self.view.bounds
         authComp.frame.origin.x = 10
         authComp.frame.size.width = authComp.frame.size.width - 10
-        //self.view.addSubview(authComp)
+        self.view.addSubview(authComp)
         
         var authEmail = Email_Address()
         authEmail.controller = self
         authEmail.setEmailDefaultThemes()
         authEmail.frame = self.view.bounds
-        self.view.addSubview(authEmail)
+        //self.view.addSubview(authEmail)
         
         var authMobile = Mobile_Number()
         authMobile.controller = self
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
         authPIN.controller = self
         authPIN.setPINDefaultThemes()
         authPIN.frame = self.view.bounds
-       // self.view.addSubview(authPIN)
+        self.view.addSubview(authPIN)
     }
 
 

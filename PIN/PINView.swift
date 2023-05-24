@@ -377,6 +377,9 @@ public class PINView: UIView{
         btnResend.TABtnBackgrounColor = .btnBackgroundColor
         btnResend.TABtnTitleTextFont = .boldSystemFont(ofSize: 12)
         btnResend.TABtnBackgrounColor = .btnTitleColor
+        
+        //MARK: Header Img Logo
+        imgLogo.TAImageLogo = UIImage(named: "\("logo2")")!
     
         
         config.headerLbl = lblHeader
@@ -394,11 +397,17 @@ public class PINView: UIView{
     public func setThemeWithPINConfiguration(config:AuthenticationConfiguration)
     {
         self.setThemsForHeaderView(view: viewHeader, config: config.headerView)
+       
         self.setThemsForLable(lbl: lblHeaderLogin, config: config.headerLbl)
+        
         self.setThemsForLable(lbl: lblPin, config: config.secondLbl)
+        
         self.setThemsForLable(lbl: lblPinDescription, config: config.firstLbl)
+        
         self.setThemsForButton(btn: btnValidate, config: config.valideBtn)
+        
         self.setThemsForResentPINButton(btn: btnResendPin, config: config.resendPINBtn)
+        
         self.setThemsForHeaderViewImageORLogo(img: imgHeaderLogo, config: config.logoImage)
         
     }

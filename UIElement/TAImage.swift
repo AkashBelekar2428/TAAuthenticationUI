@@ -8,8 +8,8 @@
 import Foundation
 
 public class TAImage{
-    public var TAImageLogo: UIImage = UIImage()
-    public var TAImageIcon: UIImage = UIImage()
+    public var TAImageLogo: UIImage = UIImage(named: "\("logo2")")!
+    public var TAImageIcon: UIImage = UIImage(named: "\("logo2")")!
     public var TAImageClipsToBounds: Bool = false
     public var TAImageUserInteractionEnabled: Bool = false
 }

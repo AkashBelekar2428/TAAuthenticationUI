@@ -155,6 +155,9 @@ public class Mobile_Number:UIView {
         btnValide.TABtnCornerRadius = 4
         btnValide.TABtnMasksToBounds =  true
         
+        //MARK: Header Img Logo
+        imgLogo.TAImageLogo = UIImage(named: "\("logo2")")!
+        
         config.headerLbl = lblHeader
         config.firstLbl = lblFirst
         config.secondLbl = lblSecond
@@ -170,11 +173,17 @@ public class Mobile_Number:UIView {
     public func setThemeWithMobileConfiguration(config:AuthenticationConfiguration)
     {
         self.setThemsForHeaderView(view: viewHeader, config: config.headerView)
+       
         self.setThemsForLable(lbl: lblHeaderLogin, config: config.headerLbl)
+        
         self.setThemsForLable(lbl: lblMobile, config: config.firstLbl)
+        
         self.setThemsForLable(lbl: lblCountryCode, config: config.secondLbl)
+        
         self.setThemsForTextField(textfiled: tfMobileNum, config: config.firstTextfiled)
+        
         self.setThemsForHeaderViewImageORLogo(img: imgHeaderLogo, config: config.logoImage)
+        
         self.setThemsForButton(btn: btnSendPin, config: config.valideBtn)
     }
     

@@ -138,6 +138,7 @@ public class AuthenticationLogIn: UIView {
         let viewHeader = TAUIView()
         let btnValide = TAButton()
         let btnResendPIN = TAButton()
+        let headerImgLogo = TAImage()
         
         
         //MARK: HeaderView Txt
@@ -184,14 +185,16 @@ public class AuthenticationLogIn: UIView {
         btnValide.TABtnBackgrounColor = .btnBackgroundColor
         btnValide.TABtnTitleTextFont = .boldSystemFont(ofSize: 16)
         btnValide.TABtnCornerRadius = 5
-        btnValide.TABtnMasksToBounds =  true
+        btnValide.TABtnMasksToBounds = true
         
         //MARK: ResendPIN btn
         btnResendPIN.TABtnTitleText = "Forgot Password?"
         btnResendPIN.TABtnTitleTextColor = .textLblColor
         btnResendPIN.TABtnBackgrounColor = .white
         btnResendPIN.TABtnTitleTextFont = .boldSystemFont(ofSize: 12)
-       
+        
+        //MARK: header Logo
+        headerImgLogo.TAImageLogo = UIImage(named: "\("logo2")")!
         
         authConfigObj.headerLbl = lblHeader
         authConfigObj.firstLbl = lblFirst
@@ -201,6 +204,7 @@ public class AuthenticationLogIn: UIView {
         authConfigObj.headerView = viewHeader
         authConfigObj.valideBtn = btnValide
         authConfigObj.resendPINBtn = btnResendPIN
+        authConfigObj.logoImage = headerImgLogo
         
         return authConfigObj
     }
