@@ -1,16 +1,24 @@
 PODS:
-  - TAAuthenticationUI (0.1.0)
+  - Alamofire (5.7.1)
+  - TAAuthenticationUI (1.1.0):
+    - Alamofire (~> 5.4)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.4)
   - TAAuthenticationUI (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
 
 EXTERNAL SOURCES:
   TAAuthenticationUI:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TAAuthenticationUI: 558b4b6892bedb0a332e2c40084bd2101dccd8a1
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  TAAuthenticationUI: 03077bbe6ba8da507a3ae9987380a3185a655277
 
-PODFILE CHECKSUM: 507597bd428e8c5a0e0cac6210dd7c50ebf07c91
+PODFILE CHECKSUM: d1b9d46c07589acf74f8fcd874af48dd55386c76
 
 COCOAPODS: 1.12.1
